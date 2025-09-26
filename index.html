@@ -28,19 +28,14 @@
     }
     * { box-sizing: border-box; }
     html, body { margin:0; }
-    /* Use natural flow with scroll; ensure viewport height for safe areas */
     body {
       min-height: 100vh;
-      min-height: 100svh; /* modern mobile browsers */
+      min-height: 100svh;
       background: var(--bg);
       color: var(--fg);
       font: 16px/1.6 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial;
     }
-    .wrapper {
-      max-width: 920px;
-      margin: 0 auto;
-      padding: 16px;
-    }
+    .wrapper { max-width: 920px; margin: 0 auto; padding: 16px; }
     .card {
       width: 100%;
       background: var(--card);
@@ -48,15 +43,13 @@
       border-radius: 18px;
       padding: 18px;
       box-shadow: 0 10px 36px rgba(0,0,0,.35);
-      /* no overflow hidden to allow internal content to extend page height */
     }
     .hero { display:flex; flex-direction:column; align-items:center; text-align:center; gap:10px; }
     .avatar {
       width: 112px; height: 112px;
       border-radius: 14px;
       display:grid; place-items:center;
-      background: #000;
-      color: #fff; font-weight: 800; font-size: 40px; letter-spacing: 2px;
+      background: #000; color: #fff; font-weight: 800; font-size: 40px; letter-spacing: 2px;
     }
     h1 { font-size: 26px; margin: 0; line-height: 1.15; }
     .role { color: var(--muted); font-size: 16px; }
@@ -82,7 +75,6 @@
       touch-action: manipulation;
     }
     .btn-wa { background: var(--wa); border-color: rgba(37,211,102,.4); box-shadow: 0 6px 16px rgba(37,211,102,.25); }
-    /* Desktop enhancements */
     @media (min-width: 880px) {
       .wrapper { padding: 32px; }
       .card { padding: 28px; }
@@ -111,7 +103,9 @@
       <section class="list" aria-label="Contatti e riferimenti">
         <div class="item"><div class="label">Telefono</div><div class="value"><a href="tel:+393486063025">348 606 3025</a></div></div>
         <div class="item"><div class="label">Email</div><div class="value"><a href="mailto:dannamirco@gmail.com">dannamirco@gmail.com</a></div></div>
+        <div class="item"><div class="label">PEC</div><div class="value"><a href="mailto:mirco.danna@archiworldpec.it">mirco.danna@archiworldpec.it</a></div></div>
         <div class="item"><div class="label">Partita IVA</div><div class="value">01630890091</div></div>
+        <div class="item"><div class="label">Codice Univoco (SDI)</div><div class="value">M5UXCR1</div></div>
         <div class="item"><div class="label">Iscrizione Albo Architetti</div><div class="value">Ordine degli Architetti della Provincia di Savona – n. 903</div></div>
         <div class="item"><div class="label">Certificatore Energetico (Liguria)</div><div class="value">n. 5887</div></div>
         <div class="item"><div class="label">Coordinatore per la Sicurezza</div><div class="value">Coordinatore per la Sicurezza in fase di progettazione ed esecuzione (D.Lgs. 81/2008)</div></div>
